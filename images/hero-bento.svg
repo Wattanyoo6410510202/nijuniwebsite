@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f3e0d2"/>
+  
+  <!-- Bento Box -->
+  <g id="bento">
+    <!-- Box outline -->
+    <rect x="50" y="50" width="300" height="200" fill="none" stroke="#ea0018" stroke-width="3"/>
+    
+    <!-- Sushi compartment -->
+    <rect x="50" y="50" width="150" height="100" fill="#ffebcd" stroke="#ea0018" stroke-width="2"/>
+    <circle cx="80" cy="80" r="12" fill="#ff6b6b"/>
+    <circle cx="105" cy="75" r="12" fill="#ff8787"/>
+    <circle cx="130" cy="80" r="12" fill="#ff6b6b"/>
+    <text x="125" y="120" font-size="24" text-anchor="middle">🍣</text>
+    
+    <!-- Rice compartment -->
+    <rect x="200" y="50" width="150" height="100" fill="#fffacd" stroke="#ea0018" stroke-width="2"/>
+    <text x="275" y="115" font-size="48" text-anchor="middle">🍚</text>
+    
+    <!-- Vegetable compartment -->
+    <rect x="50" y="150" width="150" height="100" fill="#e8f5e9" stroke="#ea0018" stroke-width="2"/>
+    <text x="125" y="215" font-size="40" text-anchor="middle">🥦</text>
+    
+    <!-- Sauce compartment -->
+    <rect x="200" y="150" width="150" height="100" fill="#fce4ec" stroke="#ea0018" stroke-width="2"/>
+    <text x="275" y="215" font-size="48" text-anchor="middle">🍤</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="20" r="8" fill="#2672a0" opacity="0.3"/>
+  <circle cx="300" cy="280" r="8" fill="#2672a0" opacity="0.3"/>
+</svg>

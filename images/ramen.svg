@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f3e0d2" rx="12"/>
+  
+  <!-- Ramen Bowl -->
+  <g id="ramen">
+    <!-- Bowl -->
+    <ellipse cx="100" cy="60" rx="70" ry="20" fill="#f4a460" stroke="#ea0018" stroke-width="2"/>
+    <path d="M 30 60 Q 30 100 100 120 Q 170 100 170 60" fill="#d4a574" stroke="#ea0018" stroke-width="2"/>
+    
+    <!-- Noodles -->
+    <path d="M 50 70 Q 60 90 70 85" stroke="#ffd700" stroke-width="3" fill="none"/>
+    <path d="M 75 75 Q 85 95 95 90" stroke="#ffd700" stroke-width="3" fill="none"/>
+    <path d="M 105 90 Q 115 95 125 75" stroke="#ffd700" stroke-width="3" fill="none"/>
+    <path d="M 130 85 Q 140 90 150 70" stroke="#ffd700" stroke-width="3" fill="none"/>
+    
+    <!-- Broth -->
+    <ellipse cx="100" cy="65" rx="65" ry="18" fill="#d4a56f" opacity="0.5"/>
+    
+    <!-- Toppings -->
+    <circle cx="70" cy="80" r="8" fill="#90ee90"/>
+    <circle cx="130" cy="85" r="8" fill="#daa520"/>
+  </g>
+  
+  <!-- Emoji for reference -->
+  <text x="100" y="170" font-size="32" text-anchor="middle">🍜</text>
+</svg>

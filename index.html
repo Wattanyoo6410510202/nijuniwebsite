@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nijuni - ร้านอาหารญี่ปุ่นแท้</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <img src="images/Capture.PNG" alt="NIJUNI Logo" class="brand-logo">
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <div class="hero-slide active">
+                <h2 class="hero-title">MOMENTS OF HAPPINESS</h2>
+                <p class="hero-subtitle">เราคัดเลือกเฉพาะวัตถุดิบสดใหม่คุณภาพสูง
+                    ผ่านกระบวนการคัดสรรอย่างประณีตในทุกขั้นตอน
+                    เพื่อให้ตรงตามมาตรฐานของเรา
+                    และพร้อมส่งต่อพลังงานดี ๆ
+                    ผ่านอาหารญี่ปุ่นทุกจานที่ตั้งใจรังสรรค์</p>
+            </div>
+
+            <div class="hero-slide">
+                <h2 class="hero-title">เปิดอย่างเป็นทางการใน</h2>
+
+                <p class="hero-subtitle">
+                    <strong>1 มีนาคม</strong>
+                </p>
+
+                <div class="countdown" id="countdown">
+                    <span><b id="days">00</b> วัน</span>
+                    <span><b id="hours">00</b> ชม.</span>
+                    <span><b id="minutes">00</b> นาที</span>
+                    <span><b id="seconds">00</b> วิ</span>
+                </div>
+            </div>
+
+            <!-- dots -->
+            <div class="hero-dots">
+                <span class="dot active" onclick="manualSlide(0)"></span>
+                <span class="dot" onclick="manualSlide(1)"></span>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Menu Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2 class="section-title">เกี่ยวกับ Nijuni</h2>
+                <p>NIJUNI Japanese Restaurant ในหาดใหญ่เป็นร้านอาหารญี่ปุ่นยอดนิยมในพื้นที่ มีรีวิวดี อาหารคุณภาพ
+                    และบรรยากาศร้านน่านั่ง เหมาะสำหรับทั้งมื้ออาหารปกติและโอกาสพิเศษ</p>
+                <p>เรามุ่งมั่นที่จะเสิร์ฟอาหารที่ใช้วัตถุดิบสดใหม่ ตามสูตรแบบดั้งเดิมของญี่ปุ่น</p>
+                <ul class="about-features">
+                    <li>✓ วัตถุดิบสดใหม่นำเข้าจากญี่ปุ่น</li>
+                    <li>✓ พนักงานบริการดี</li>
+                    <li>✓ บรรยากาศเหมือนตลาดปลา But fish-market บรรยากาศเชิญชวน</li>
+                    <li>✓ เมนูหมุนเวียนโปรโมชันต่าง ๆ โดยเฉพาะช่วงเทศกาลหรือกิจกรรมพิเศษ</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="images/Capture1.PNG" alt="Japan" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="promotion" class="promotion">
+        <div class="container">
+            <h2 class="section-title">โปรโมชันพิเศษ</h2>
+            <p class="section-subtitle">
+                คัดสรรความพิเศษเพื่อช่วงเวลาที่ดีที่สุดของคุณ
+            </p>
+
+            <div class="promotion-grid">
+                <!-- Promotion 1 : Anniversary -->
+                <div class="promotion-item">
+                    <img src="images/AW_anniversary.jpg" alt="Anniversary Promotion">
+                    <div class="promotion-text">
+                        <h3>Anniversary Special</h3>
+                        <p>ฉลองครบรอบกับเมนูพิเศษและดีลสุดคุ้ม เฉพาะช่วงเวลานี้เท่านั้น</p>
+                    </div>
+                </div>
+
+                <!-- Promotion 2 : Father's Day -->
+                <div class="promotion-item">
+                    <img src="images/AW_father. day.jpg" alt="Father's Day Promotion">
+                    <div class="promotion-text">
+                        <h3>Father’s Day Set</h3>
+                        <p>ชุดเมนูอบอุ่นสำหรับวันพ่อ แทนคำขอบคุณด้วยมื้อพิเศษ</p>
+                    </div>
+                </div>
+
+                <!-- Promotion 3 : Manga & Karaoke -->
+                <div class="promotion-item">
+                    <img src="images/AW_manga karaoke.jpg" alt="Manga & Karaoke Promotion">
+                    <div class="promotion-text">
+                        <h3>Manga & Karaoke Night</h3>
+                        <p>สนุกกับมังงะและคาราโอเกะ เติมเต็มค่ำคืนสไตล์ญี่ปุ่น</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <!-- <h2 class="section-title">แกลเลอรี่</h2> -->
+            <p class="section-subtitle">อาหารจะสื่อถึงบรรยากาศ
+                ความอบอุ่น ให้ความรู้สึกนุ่มนวล สบายๆ เหมาะกับบรยากาศ
+                ครอบครัว</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/นาเบะ.JPG" alt="Sushi">
+                    <p>นาเบะ</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ซูชิ.JPG" alt="Ramen">
+                    <p>ซูชิ</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ข้าวหน้าปลาไหล.JPG" alt="Donburi">
+                    <p>ข้าวหน้าปลาไหล</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ข้าวหน้า + ด้ง.JPG" alt="Gyoza">
+                    <p>ข้าวหน้า + ด้ง</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/สเต๊ก.JPG" alt="Tempura">
+                    <p>สเต๊ก</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ของทอด.JPG" alt="Bento">
+                    <p>ของทอด</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">ติดต่อเรา</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>ที่อยู่</h4>
+                            <p>123 ถนนสุขุมวิท แขวงสำโพท เขตบางนา กรุงเทพฯ 10260</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>โทรศัพท์</h4>
+                            <p><a href="tel:0891234567">089-123-4567</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>อีเมล</h4>
+                            <p><a href="mailto:info@nijuni.com">info@nijuni.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>เวลาทำการ</h4>
+                            <p>วันจันทร์-อาทิตย์ 10:00 - 22:00 น.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="ชื่อของท่าน" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="อีเมลของท่าน" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="เบอร์โทรศัพท์" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="ข้อความ" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">เมนูของเรา</h2>
+            <p class="section-subtitle">วัตถุดิบสดใหม่คุณภาพสูง ผ่านกระบวนการคัดสรรอย่างประณีตในทุกขั้นตอน</p>
+
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="sushi">ซูชิ</button>
+                <button class="filter-btn" data-filter="ramen">ราเมน</button>
+                <button class="filter-btn" data-filter="donburi">โดนบุริ</button>
+                <button class="filter-btn" data-filter="appetizer">ของทีน่อม</button>
+            </div>
+
+            <div class="menu-grid">
+          
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍣</div>
+                    <h3>โตโกะ โนกิริซูชิ</h3>
+                    <p class="menu-description">ซูชิปลาทูน่าสดใหม่ บน ข้าวมากซู</p>
+                    <p class="menu-price">฿150</p>
+                    <button class="btn btn-small" onclick="addToCart('โตโกะ โนกิริซูชิ', 150)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍣</div>
+                    <h3>ซัลมอน โนกิริซูชิ</h3>
+                    <p class="menu-description">ปลาแซลมอนนอร์เวย์สดใหม่ บน ข้าวมากซู</p>
+                    <p class="menu-price">฿180</p>
+                    <button class="btn btn-small" onclick="addToCart('ซัลมอน โนกิริซูชิ', 180)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍣</div>
+                    <h3>เวจิตารียน โรล</h3>
+                    <p class="menu-description">กาวดอนสดใหม่ แสนยอ กวน วว เลขกร่วง</p>
+                    <p class="menu-price">฿120</p>
+                    <button class="btn btn-small" onclick="addToCart('เวจิตารียน โรล', 120)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍣</div>
+                    <h3>โตโร โรล</h3>
+                    <p class="menu-description">ปลาทูน่าหลัก (ถูกลูกปลา) รับลี่มากซู</p>
+                    <p class="menu-price">฿200</p>
+                    <button class="btn btn-small" onclick="addToCart('โตโรโรล', 200)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">🍜</div>
+                    <h3>โทนคอตสึ ราเมน</h3>
+                    <p class="menu-description">น้ำซุปต้นตำรับจากกระดูก ก่านหัวหมู 4 ชั่วโมง</p>
+                    <p class="menu-price">฿180</p>
+                    <button class="btn btn-small" onclick="addToCart('โทนคอตสึ ราเมน', 180)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">🍜</div>
+                    <h3>มิโซ ราเมน</h3>
+                    <p class="menu-description">น้ำซุปมิโซเข้มข้น กับใบหอม เอดามาเม่และปลาจิก</p>
+                    <p class="menu-price">฿160</p>
+                    <button class="btn btn-small" onclick="addToCart('มิโซ ราเมน', 160)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">🍜</div>
+                    <h3>โชยุ ราเมน</h3>
+                    <p class="menu-description">น้ำซุปหมัก กุ้ง เอดามาเม่ และเต้าหู้อ่อน</p>
+                    <p class="menu-price">฿170</p>
+                    <button class="btn btn-small" onclick="addToCart('โชยุ ราเมน', 170)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">🍜</div>
+                    <h3>ชื่นชู ราเมน</h3>
+                    <p class="menu-description">น้ำซุปเปลี่ยนแปลงแต่ความอร่อย ขึ้นเด่อนหมู</p>
+                    <p class="menu-price">฿190</p>
+                    <button class="btn btn-small" onclick="addToCart('ชื่นชู ราเมน', 190)">เพิ่มไป</button>
+                </div>
+
+          
+                <div class="menu-item" data-category="donburi">
+                    <div class="menu-item-image">🍲</div>
+                    <h3>คัตสึ โดนบุริ</h3>
+                    <p class="menu-description">หมูทอดกรอบบนข้าวขาว กับซอสโดนบุริเข้มข้น</p>
+                    <p class="menu-price">฿150</p>
+                    <button class="btn btn-small" onclick="addToCart('คัตสึ โดนบุริ', 150)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="donburi">
+                    <div class="menu-item-image">🍲</div>
+                    <h3>ไก่ยากิ โดนบุริ</h3>
+                    <p class="menu-description">ไก่ย่างสไตล์ญี่ปุ่น เทริยากิ บนข้าวสวย</p>
+                    <p class="menu-price">฿140</p>
+                    <button class="btn btn-small" onclick="addToCart('ไก่ยากิ โดนบุริ', 140)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="donburi">
+                    <div class="menu-item-image">🍲</div>
+                    <h3>เทนดอน</h3>
+                    <p class="menu-description">กุ้งหรือปลาทอดกรอบ ซอสข้มข้น บนข้าวโรง</p>
+                    <p class="menu-price">฿160</p>
+                    <button class="btn btn-small" onclick="addToCart('เทนดอน', 160)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="donburi">
+                    <div class="menu-item-image">🍲</div>
+                    <h3>อยุโอดอน</h3>
+                    <p class="menu-description">นูดเหนือว่านไป่อยู่ โยดอน โยดอน คำคร่ำ</p>
+                    <p class="menu-price">฿130</p>
+                    <button class="btn btn-small" onclick="addToCart('อยุโอดอน', 130)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-item-image">🥟</div>
+                    <h3>เกียวซะ</h3>
+                    <p class="menu-description">เดิมเสฉวนญี่ปุ่น หลม เค้กเข้าต่อเนื่องกับเนื้อ ทำไม่นำคำ</p>
+                    <p class="menu-price">฿90</p>
+                    <button class="btn btn-small" onclick="addToCart('เกียวซะ', 90)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-item-image">🍤</div>
+                    <h3>เทมปุระ</h3>
+                    <p class="menu-description">กุ้งและผักทอดสไตล์ญี่ปุ่น อร่อยหนาว</p>
+                    <p class="menu-price">฿120</p>
+                    <button class="btn btn-small" onclick="addToCart('เทมปุระ', 120)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-item-image">🍡</div>
+                    <h3>เอดามาเม่</h3>
+                    <p class="menu-description">ถั่วเขียวต้มน้ำเกลือ อบเค็ม</p>
+                    <p class="menu-price">฿60</p>
+                    <button class="btn btn-small" onclick="addToCart('เอดามาเม่', 60)">เพิ่มไป</button>
+                </div>
+
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-item-image">🥢</div>
+                    <h3>มิโซซุป</h3>
+                    <p class="menu-description">ซุปมิโซจากหมักดั้งเดิม นั่นอร่อยมากในการรับประทาน</p>
+                    <p class="menu-price">฿50</p>
+                    <button class="btn btn-small" onclick="addToCart('มิโซซุป', 50)">เพิ่มไป</button>
+                </div>
+            </div>
+        </div>
+    </section>Menu 
+    Filter -->
+
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="cart-close" onclick="closeCart()">&times;</span>
+            <h2>🛒 ตะกร้าของท่าน</h2>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">ตะกร้าว่าง</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>รวมทั้งหมด:</strong>
+                    <span id="totalPrice">฿0</span>
+                </div>
+                <button class="btn btn-primary" onclick="checkout()">สั่งอาหาร</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <button class="cart-button" id="cartButton" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nijuni</h4>
+                    <p>ร้านอาหารญี่ปุ่นแท้ที่เสิร์ฟความอร่อยทุกจาน</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="#menu">เมนู</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a href="#gallery">แกลเลอรี่</a></li>
+                        <li><a href="#contact">ติดต่อ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ติดตามเรา</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nijuni Restaurant. ทุกสิทธิ์คุ้มครอง</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        let next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 5000); // ⏱ ปรับเวลาได้
+    }
+
+    function resetAutoSlide() {
+        clearInterval(slideInterval);
+        startAutoSlide();
+    }
+
+    // ผู้ใช้กดเอง
+    function manualSlide(index) {
+        showSlide(index);
+        resetAutoSlide(); // 🔥 รีเซ็ตเวลาใหม่
+    }
+
+    // เริ่มทำงาน
+    startAutoSlide();
+</script>
+
+<script>
+    const targetDate = new Date("2026-03-01T00:00:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+            document.getElementById("countdown").innerHTML = "🎉 เปิดให้บริการแล้ว";
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+
+
+</html>

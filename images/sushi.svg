@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f3e0d2" rx="12"/>
+  
+  <!-- Sushi -->
+  <g id="sushi">
+    <rect x="30" y="40" width="140" height="120" rx="10" fill="#ffebcd" stroke="#ea0018" stroke-width="2"/>
+    
+    <!-- Rice -->
+    <ellipse cx="50" cy="70" rx="12" ry="15" fill="#fffacd"/>
+    <ellipse cx="100" cy="65" rx="12" ry="15" fill="#fffacd"/>
+    <ellipse cx="150" cy="70" rx="12" ry="15" fill="#fffacd"/>
+    
+    <!-- Fish -->
+    <circle cx="50" cy="110" r="14" fill="#ff6b6b"/>
+    <circle cx="100" cy="115" r="14" fill="#ff8787"/>
+    <circle cx="150" cy="110" r="14" fill="#ff6b6b"/>
+    
+    <!-- Seaweed -->
+    <path d="M 25 95 Q 30 100 35 95" stroke="#2b5f2a" stroke-width="2" fill="none"/>
+    <path d="M 165 95 Q 170 100 175 95" stroke="#2b5f2a" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Emoji for reference -->
+  <text x="100" y="170" font-size="32" text-anchor="middle">🍣</text>
+</svg>
