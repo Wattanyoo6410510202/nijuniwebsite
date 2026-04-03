@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nijuni Settings</title>
+    <link rel="icon" href="images/404498175_325920740196370_4142471101974181135_n.jpg" type="image/png">
+    <meta name="description" content="Nijuni Settings - Generate QR Code with Logo">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <style>
+        .settings-container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 40px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(234, 0, 24, 0.1);
+        }
+
+        .settings-container h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .qr-input {
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .generate-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .generate-btn:hover {
+            background: #d30014;
+        }
+
+        .qr-container {
+            margin-top: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .qr-code {
+            position: relative;
+            display: inline-block;
+        }
+
+        .qr-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sakura Petals Animation -->
+    <div class="sakura petal1">🌸</div>
+    <div class="sakura petal2">🌸</div>
+    <div class="sakura petal3">🌸</div>
+    <div class="sakura petal4">🌸</div>
+    <div class="sakura petal5">🌸</div>
+
+    <div class="settings-container">
+        <h1>Generate QR Code</h1>
+        <input type="text" id="qrText" class="qr-input" placeholder="Enter text or URL to generate QR code"
+            value="https://nijuni.com">
+        <button class="generate-btn" onclick="generateQR()">Generate QR Code</button>
+        <div class="qr-container" id="qrContainer" style="display: none;">
+            <div class="qr-code">
+                <img id="qrcode" alt="QR Code" style="width: 300px; height: 300px;">
+            </div>
+            <img src="images/404498175_325920740196370_4142471101974181135_n.jpg" alt="Nijuni Logo" class="qr-logo" id="qrLogo">
+        </div>
+    </div>
+
+    <script>
+        function generateQR() {
+            const text = document.getElementById('qrText').value;
+            const qrContainer = document.getElementById('qrContainer');
+            const qrcodeImg = document.getElementById('qrcode');
+
+            if (text.trim() === '') {
+                alert('Please enter text or URL');
+                return;
+            }
+
+            // Generate QR code using qrcode-generator
+            var qr = qrcode(0, 'H');
+            qr.addData(text);
+            qr.make();
+
+            // Create image tag
+            qrcodeImg.src = qr.createDataURL(8, 0); // cellSize=8, margin=0 for higher resolution
+
+            qrContainer.style.display = 'block';
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+</content>
